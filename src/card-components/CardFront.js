@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 export default class CardFront extends Component {
-
   render() {
+    const poster = this.props.poster;
     return (
-      <div className="card-front" style={{backgroundImage: `url(${''})`}}>
-      </div>
-    )
+      <div
+        className="card-front"
+        style={{ backgroundImage: `url(${poster})` }}
+      ></div>
+    );
   }
 }
